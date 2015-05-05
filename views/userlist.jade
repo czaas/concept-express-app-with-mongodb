@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2.
+    User List from my database
+  ul
+    each user, i in userlist
+      li
+        a(href="mailto:#{user.email}")= user.username
